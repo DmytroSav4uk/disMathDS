@@ -1,0 +1,30 @@
+.set {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #0080ff;
+  border: 2px solid black;
+
+}
+
+.set-a {
+  left: 50px;
+  top: 25px;
+  border: none;
+}
+
+.set-a-border{
+  left: 50px;
+  top: 25px;
+  z-index: 12;
+  border: 1px solid black;
+  background: none;
+}
+
+.set-b {
+  left: 130px;
+  top: 25px;
+  border:1px solid black;
+}
+

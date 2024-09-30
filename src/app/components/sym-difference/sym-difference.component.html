@@ -1,0 +1,43 @@
+<form [formGroup]="setForm" style="display: flex" (ngSubmit)="onSubmit()">
+    <div style="display:flex;">
+        <div class="inputFather">
+            <p class="brackets">{{"{"}}</p>
+            <input type="text" name="setA" formControlName="setA">
+            <p class="brackets">{{"}"}}</p>
+        </div>
+
+        <p>Δ</p>
+
+        <div class="inputFather">
+            <p class="brackets">{{"{"}}</p>
+            <input type="text" name="setB" formControlName="setB">
+            <p class="brackets">{{"}"}}</p>
+        </div>
+    </div>
+    <button [disabled]="setForm.invalid" type="submit">обчислити</button>
+</form>
+
+
+<div class="result">
+    {{"{"}}
+    @for (item of result; track item) {
+    {{item}},
+    }
+    {{"}"}}
+</div>
+
+<div class="vennFather">
+  <div class="venn-diagram">
+    <div class="set set-a">
+      <p class="textA">A</p>
+    </div>
+    <div class="set set-a set-a-border"></div>
+    <div class="set set-b set-b-border"></div>
+    <div class="set set-b">
+      <p class="textB">B</p>
+    </div>
+    <div class="intersection"></div>
+  </div>
+</div>
+
+

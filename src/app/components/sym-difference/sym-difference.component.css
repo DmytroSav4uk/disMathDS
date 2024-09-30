@@ -1,0 +1,44 @@
+
+
+.set-a,
+.set-b {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.set-a {
+  background-color: #0080ff;
+  left: 50px;
+  top: 25px;
+
+}
+
+.set-b {
+  background-color: #0080ff;
+  left: 130px;
+  top: 25px;
+
+}
+
+.intersection {
+  position: absolute;
+  width: 71px;
+  height: 131px;
+  background-color: rgba(255, 255, 255, 0.92);
+  top: 34px;
+  left: 130px;
+  z-index: 1;
+  border-radius: 100%;
+}
+
+.set-a-border{
+  border: 1px solid black;
+  background: none;
+}
+
+.set-b-border{
+  border: 1px solid black;
+  background: none;
+}
